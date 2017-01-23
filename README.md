@@ -1,6 +1,9 @@
 # Installation #
 
-`git clone git@bitbucket.org:tainitam/dotfiles.git`
+```
+git clone git@bitbucket.org:tainitam/dotfiles.git
+ln -s ~/dotfiles/.bash_profile .bash_profile
+```
 
 ### What is this repository for? ###
 
