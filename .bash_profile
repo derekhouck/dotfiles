@@ -10,3 +10,4 @@ export PATH="/usr/local/bin:$PATH"
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
 alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
+eval "$(rbenv init -)"
