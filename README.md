@@ -2,6 +2,13 @@
 
 ```
 git clone git@bitbucket.org:tainitam/dotfiles.git
+```
+If multiple SSH identities are installed...
+```
+git clone git@<alias>:tainitam/dotfiles.git
+```
+Then symlink your .bash_profile
+```
 ln -s ~/dotfiles/.bash_profile .bash_profile
 ```
 
