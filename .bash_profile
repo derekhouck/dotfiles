@@ -3,7 +3,6 @@ export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 alias ls='ls -GFh'
-alias flatten="find 2016/ -mindepth 2 -type f -exec mv -i '{}' 2016/ ';'";
 alias trash="rmtrash"
 alias themes="cd vagrant-local/www/wordpress-default/wp-content/themes/"
 export PATH="/usr/local/bin:$PATH"
