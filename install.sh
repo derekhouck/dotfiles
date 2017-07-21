@@ -1,5 +1,11 @@
 #!/bin/sh
 
-git clone --depth=1 https://tainitam@bitbucket.org/tainitam/dotfiles.git "$HOME/dotfiles"
-ln -s "$HOME/dotfiles/.bash_profile" .bash_profile
-
+dotfiles="$HOME/dotfiles"
+if [ ! -e $dotfiles/.git ]; then
+	echo "Cloning dotfiles\n"
+	git clone --depth=1 https://tainitam@bitbucket.org/tainitam/dotfiles.git $dotfiles
+	ln -s "$HOME/dotfiles/.bash_profile" .bash_profile
+else
+	echo "Updating dotfiles\n"
+	cd $dotfiles && git pull
+fi
