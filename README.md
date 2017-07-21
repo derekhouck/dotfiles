@@ -1,22 +1,8 @@
 # Installation #
 
 ```
-git clone git@bitbucket.org:tainitam/dotfiles.git
+curl https://raw.github.com/derekhouck/dotfiles/master/install.sh -L -o - | sh
 ```
-If multiple SSH identities are installed...
-```
-git clone git@<alias>:tainitam/dotfiles.git
-```
-Then symlink your .bash_profile
-```
-ln -s ~/dotfiles/.bash_profile .bash_profile
-```
-
-### What is this repository for? ###
-
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
 
 ### How do I get set up? ###
 
