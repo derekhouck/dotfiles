@@ -1,4 +1,5 @@
 # Installation #
+Be sure you're using an administrator account before you run this script. If necessary, use `su <admin username>`.
 
 ```
 curl https://raw.github.com/derekhouck/dotfiles/master/install.sh -L -o - | sh
