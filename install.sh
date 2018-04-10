@@ -1,5 +1,7 @@
 #!/bin/sh
 
+bot "Hi! I'm going to install tooling and tweak your system settings. Here I go..."
+
 dotfiles="$HOME/dotfiles"
 if [ ! -e $dotfiles/.git ]; then
 	echo "Cloning dotfiles\n"
