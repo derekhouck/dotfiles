@@ -10,3 +10,7 @@ alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall 
 alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 eval "$(rbenv init -)"
+
+# Make Terminal Better
+
+cd() { builtin cd "$@"; ls; }   # Always list directory contents upon 'cd'
