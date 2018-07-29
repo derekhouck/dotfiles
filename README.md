@@ -4,6 +4,9 @@ Be sure you're using an administrator account before you run this script. If nec
 ```
 curl https://raw.github.com/derekhouck/dotfiles/master/install.sh -L -o - | sh
 ```
+## What this does ##
+
+1. Installs Homebrew
 
 ### How do I get set up? ###
 
@@ -19,8 +22,3 @@ curl https://raw.github.com/derekhouck/dotfiles/master/install.sh -L -o - | sh
 * Writing tests
 * Code review
 * Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
