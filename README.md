@@ -6,7 +6,11 @@ curl https://raw.github.com/derekhouck/dotfiles/master/install.sh -L -o - | sh
 ```
 ## What this does ##
 
-1. Installs Homebrew
+1. Asks for admin password
+2. Updates all existing software
+3. Installs XCode
+4. Installs Homebrew then runs `brew doctor` and `brew update`
+5. Installs MacVim
 
 ### How do I get set up? ###
 
@@ -16,9 +20,3 @@ curl https://raw.github.com/derekhouck/dotfiles/master/install.sh -L -o - | sh
 * Database configuration
 * How to run tests
 * Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
