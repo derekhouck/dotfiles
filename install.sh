@@ -61,10 +61,21 @@ else
 	cd $dotfiles && git pull
 fi
 
-echo "Installing Homebrew..."
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+echo -e "
+########################
+###     HOMEBREW     ###
+########################
+"
+
+if [ ! -f "$(which brew)" ]; then
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+else
+    echo -e "Homebrew already installed"
+fi
+
 brew doctor
 brew update
+brew upgrade
 
 echo "Installing MacVim"
 brew install macvim

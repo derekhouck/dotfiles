@@ -9,7 +9,7 @@ curl https://raw.github.com/derekhouck/dotfiles/master/install.sh -L -o - | sh
 1. Asks for admin password
 2. Updates all existing software
 3. Installs XCode
-4. Installs Homebrew then runs `brew doctor` and `brew update`
+4. Installs Homebrew if not already installed then runs `brew doctor` and `brew update`
 5. Installs MacVim
 
 ### How do I get set up? ###
