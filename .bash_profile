@@ -14,3 +14,4 @@ eval "$(rbenv init -)"
 # Make Terminal Better
 
 cd() { builtin cd "$@"; ls; }   # Always list directory contents upon 'cd'
+eval "$(rbenv init -)"
