@@ -1,5 +1,6 @@
 {
     "git.autofetch": true,
     "workbench.iconTheme": "material-icon-theme",
-    "editor.wordWrap": "on"
+    "editor.wordWrap": "on",
+    "editor.fontSize": 13
 }
