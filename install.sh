@@ -19,30 +19,39 @@ cd $dotfiles
 
 source ./lib/utils
 
-# Before relying on Homebrew, check that packages can be compiled
-echo "First, we're going to make sure that XCode is installed"
-if ! type_exists 'gcc'; then
-    e_error "The XCode Command Line Tools must be installed first."
-    printf "  Download them from: https://developer.apple.com/downloads\n"
-    printf "  Then run: bash ~/.dotfiles/bin/dotfiles\n"
-    exit 1
-fi
+# Figure out what platform we're on and react accordingly
+if ( is_mac ); then
+    echo "You're on a Mac"
 
-echo "
-########################
-###     HOMEBREW     ###
-########################
-"
+    # Before relying on Homebrew, check that packages can be compiled
+    echo "First, we're going to make sure that XCode is installed"
+    if ! type_exists 'gcc'; then
+        e_error "The XCode Command Line Tools must be installed first."
+        printf "  Download them from: https://developer.apple.com/downloads\n"
+        printf "  Then run: bash ~/.dotfiles/bin/dotfiles\n"
+        exit 1
+    fi
 
-if [ ! -f "$(which brew)" ]; then
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-else
-    echo -e "Homebrew already installed"
-fi
+    echo "
+    ########################
+    ###     HOMEBREW     ###
+    ########################
+    "
 
-brew doctor
-brew update
-brew upgrade
+    if [ ! -f "$(which brew)" ]; then
+        /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    else
+        echo -e "Homebrew already installed"
+    fi
 
-echo "Installing MacVim"
-brew install macvim
+    brew doctor
+    brew update
+    brew upgrade
+
+    echo "Installing MacVim"
+    brew install macvim
+elif ( is_linux ); then
+    echo "This is a Linux system"
+fi;
+
+
