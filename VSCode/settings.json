@@ -1,3 +1,4 @@
 {
-    "git.autofetch": true
+    "git.autofetch": true,
+    "workbench.iconTheme": "material-icon-theme"
 }
