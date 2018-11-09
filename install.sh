@@ -3,6 +3,9 @@
 declare -r GITHUB_REPOSITORY="derekhouck/dotfiles"
 dotfiles="$HOME/dotfiles"
 
+# Configure "git up" alias
+git config --global alias.up '!git remote update -p; git merge --ff-only @{u}'
+
 echo "Hi! I'm going to install tooling and tweak your system settings. Here I go..."
 
 # If missing, download and extract the dotfiles repository
@@ -12,8 +15,7 @@ if [ ! -e $dotfiles/.git ]; then
 	ln -s "$HOME/dotfiles/.bash_profile" .bash_profile
 else
 	echo "Updating dotfiles\n"
-	cd $dotfiles && git fetch
-	git pull
+	cd $dotfiles && git checkout master && git up
 fi
 
 cd $dotfiles
