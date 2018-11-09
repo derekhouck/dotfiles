@@ -12,7 +12,8 @@ if [ ! -e $dotfiles/.git ]; then
 	ln -s "$HOME/dotfiles/.bash_profile" .bash_profile
 else
 	echo "Updating dotfiles\n"
-	cd $dotfiles && git pull
+	cd $dotfiles && git fetch
+	git pull
 fi
 
 cd $dotfiles
