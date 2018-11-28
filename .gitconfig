@@ -1,0 +1,16 @@
+[user]
+	email = derek@derekhouck.com
+	name = Derek Houck
+[push]
+	default = simple
+[core]
+	editor = mvim -f
+	excludesfile = ~/.gitignore_global
+[credential]
+	helper = osxkeychain
+[alias]
+	co = checkout
+[color]
+	ui = auto
+[merge]
+	tool = code

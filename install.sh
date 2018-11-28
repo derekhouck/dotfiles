@@ -9,11 +9,14 @@ echo "Hi! I'm going to install tooling and tweak your system settings. Here I go
 if [ ! -e $dotfiles/.git ]; then
 	echo "Cloning dotfiles\n"
 	git clone --depth=1 https://github.com/$GITHUB_REPOSITORY.git $dotfiles
-	ln -s "$HOME/dotfiles/.bash_profile" .bash_profile
 else
 	echo "Updating dotfiles\n"
 	cd $dotfiles && git pull
 fi
+
+# Create symlinks
+ln -s "$dotfiles/.bash_profile" .bash_profile
+ln -s "$dotfiles/.gitconfig" .gitconfig
 
 cd $dotfiles
 
