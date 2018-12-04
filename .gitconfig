@@ -1,6 +1,6 @@
 [user]
 	email = derek@derekhouck.com
-	name = Derek Houck
+	name = Derek Houck\n
 [push]
 	default = simple
 [core]
@@ -10,6 +10,7 @@
 	helper = osxkeychain
 [alias]
 	co = checkout
+	lg = log --oneline --all --graph --decorate
 [color]
 	ui = auto
 [merge]
