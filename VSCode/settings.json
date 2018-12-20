@@ -3,5 +3,6 @@
     "workbench.iconTheme": "material-icon-theme",
     "editor.wordWrap": "on",
     "editor.fontSize": 13,
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
+    "window.newWindowDimensions": "inherit"
 }
