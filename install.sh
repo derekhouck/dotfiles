@@ -11,6 +11,8 @@ echo "Hi! I'm going to install tooling and tweak your system settings. Here I go
 # Make sure the repo is up-to-date
 echo "Updating dotfiles\n"
 cd $dotfiles && git checkout master && git up
+git submodule init
+git submodule update
 
 # Create symlinks
 echo "Symlinking dotfiles"
