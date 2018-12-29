@@ -4,5 +4,6 @@
     "editor.wordWrap": "on",
     "editor.fontSize": 13,
     "editor.tabSize": 2,
-    "window.newWindowDimensions": "inherit"
+    "window.newWindowDimensions": "inherit",
+    "workbench.colorTheme": "Dracula"
 }
