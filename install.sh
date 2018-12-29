@@ -8,17 +8,14 @@ git config --global alias.up '!git remote update -p; git merge --ff-only @{u}'
 
 echo "Hi! I'm going to install tooling and tweak your system settings. Here I go..."
 
-# If missing, download and extract the dotfiles repository
-if [ ! -e $dotfiles/.git ]; then
-	echo "Cloning dotfiles\n"
-	git clone --depth=1 https://github.com/$GITHUB_REPOSITORY.git $dotfiles
-else
-	echo "Updating dotfiles\n"
-	cd $dotfiles && git checkout master && git up
-fi
+# Make sure the repo is up-to-date
+echo "Updating dotfiles\n"
+cd $dotfiles && git checkout master && git up
 
 # Create symlinks
 echo "Symlinking dotfiles"
+cd $HOME
+ln -s "$dotfiles/profile" .profile
 ln -s "$dotfiles/bashrc" .bashrc
 ln -s "$dotfiles/bash_profile" .bash_profile
 ln -s "$dotfiles/gitconfig" .gitconfig
@@ -56,8 +53,18 @@ if ( is_mac ); then
     brew update
     brew upgrade
 
+    # MacVim
     echo "Installing MacVim"
     brew install macvim
+
+    # rbenv
+    echo "Installing rbenv"
+    brew install rbenv
+    rbenv init
+
+    # The Fuck
+    echo "Install The Fuck"
+    brew install thefuck
 elif ( is_linux ); then
     echo "This is a Linux system"
 fi;
