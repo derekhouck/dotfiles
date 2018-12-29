@@ -1,6 +1,6 @@
 # Installation #
 ```
-curl https://raw.github.com/derekhouck/dotfiles/master/install.sh -L -o - | sh
+git clone https://github.com/derekhouck/dotfiles.git && cd dotfiles && source install.sh
 ```
 ## What this does ##
 
