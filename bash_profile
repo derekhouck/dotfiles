@@ -8,10 +8,13 @@ alias trash="rmtrash"
 export PATH="/usr/local/bin:$PATH"
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
 alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
+
+# Git Bash completion
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
+
+# Load rbenv automatically
 eval "$(rbenv init -)"
 
 # Make Terminal Better
 
 cd() { builtin cd "$@"; ls; }   # Always list directory contents upon 'cd'
-eval "$(rbenv init -)"

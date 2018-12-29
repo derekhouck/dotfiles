@@ -11,6 +11,7 @@
 [alias]
 	co = checkout
 	lg = log --oneline --all --graph --decorate
+	up = "!git remote update -p; git merge --ff-only @{u}"
 [color]
 	ui = auto
 [merge]
