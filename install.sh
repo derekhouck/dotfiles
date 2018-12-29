@@ -53,6 +53,10 @@ if ( is_mac ); then
     brew update
     brew upgrade
 
+    #Git
+    echo "Installing Git"
+    brew install git
+
     # MacVim
     echo "Installing MacVim"
     brew install macvim
