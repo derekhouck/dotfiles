@@ -14,3 +14,9 @@ git clone https://github.com/derekhouck/dotfiles.git && cd dotfiles && source in
     4. Installs rbenv
     5. Installs The Fuck
 5. If Linux...
+
+## Sync VSCode settings ##
+```
+ln -s ~/dotfiles/VSCode/settings.json ~/Library/Application\ Support/Code/User/settings.json
+ln -s ~/dotfiles/VSCode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
+```
