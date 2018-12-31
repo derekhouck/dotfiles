@@ -18,3 +18,6 @@ eval "$(rbenv init -)"
 # Make Terminal Better
 
 cd() { builtin cd "$@"; ls; }   # Always list directory contents upon 'cd'
+
+# Set environment variable for PGDATA (Postgres)
+export PGDATA=/usr/local/var/postgres
