@@ -5,5 +5,7 @@
     "editor.fontSize": 13,
     "editor.tabSize": 2,
     "window.newWindowDimensions": "inherit",
-    "workbench.colorTheme": "Dracula"
+    "workbench.colorTheme": "Dracula",
+    "extensions.ignoreRecommendations": false,
+    "editor.acceptSuggestionOnCommitCharacter": false
 }
