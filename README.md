@@ -25,6 +25,10 @@ git clone https://github.com/derekhouck/dotfiles.git && cd dotfiles && source in
 
 ## Sync VSCode settings
 
+Follow the instructions for the [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) VSCode plugin.
+
+### Backup VSCode settings using symlinks
+
 ```
 ln -s ~/dotfiles/VSCode/settings.json ~/Library/Application\ Support/Code/User/settings.json
 ln -s ~/dotfiles/VSCode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
