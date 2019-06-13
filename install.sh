@@ -30,15 +30,6 @@ source ./lib/utils
 if ( is_mac ); then
     echo "You're on a Mac"
 
-    # Before relying on Homebrew, check that packages can be compiled
-    echo "First, we're going to make sure that XCode is installed"
-    if ! type_exists 'gcc'; then
-        e_error "The XCode Command Line Tools must be installed first."
-        printf "  Download them from: https://developer.apple.com/downloads\n"
-        printf "  Then run: bash ~/.dotfiles/bin/dotfiles\n"
-        exit 1
-    fi
-
     echo "
     ########################
     ###     HOMEBREW     ###

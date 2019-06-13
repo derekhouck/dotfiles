@@ -16,5 +16,6 @@
     "editor.accessibilitySupport": "off",
     "eslint.autoFixOnSave": true,
     "prettier.eslintIntegration": true,
-    "prettier.htmlWhitespaceSensitivity": "strict"
+    "prettier.htmlWhitespaceSensitivity": "strict",
+    "sync.gist": "efd671ac413e6d8fb32b0a800d108856"
 }
