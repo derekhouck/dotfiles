@@ -1,12 +1,21 @@
 {
-    "git.autofetch": true,
-    "workbench.iconTheme": "material-icon-theme",
+    "[ruby]": {
+        "editor.formatOnSave": true,
+    },
     "editor.wordWrap": "on",
     "editor.fontSize": 13,
+    "editor.formatOnSaveTimeout": 1500,
     "editor.tabSize": 2,
+    "extensions.ignoreRecommendations": false,
+    "git.autofetch": true,
+    "ruby.format": "rubocop",
+    "ruby.lint": {
+        "rubocop": true,
+    },
+    "ruby.lintDebounceTime": 500,
     "window.newWindowDimensions": "inherit",
     "workbench.colorTheme": "Dracula",
-    "extensions.ignoreRecommendations": false,
+    "workbench.iconTheme": "material-icon-theme",
     "editor.acceptSuggestionOnCommitCharacter": false,
     "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
     "editor.fontLigatures": true,
@@ -14,8 +23,10 @@
     "javascript.updateImportsOnFileMove.enabled": "always",
     "editor.formatOnSave": true,
     "editor.accessibilitySupport": "off",
-    "eslint.autoFixOnSave": true,
     "prettier.eslintIntegration": true,
     "prettier.htmlWhitespaceSensitivity": "strict",
-    "sync.gist": "efd671ac413e6d8fb32b0a800d108856"
+    "sync.gist": "efd671ac413e6d8fb32b0a800d108856",
+    "javascript.format.enable": false,
+    "ruby.useLanguageServer": true,
+    "ruby.useBundler": true
 }
