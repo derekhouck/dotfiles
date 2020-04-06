@@ -3,9 +3,16 @@
         "editor.formatOnSave": true,
     },
     "editor.wordWrap": "on",
+    "editor.acceptSuggestionOnCommitCharacter": false,
     "editor.fontSize": 13,
     "editor.formatOnSaveTimeout": 1500,
     "editor.tabSize": 2,
+    "eslint.workingDirectories": [
+        {
+            "directory": "./client",
+            "changeProcessCWD": true
+        }
+    ],
     "extensions.ignoreRecommendations": false,
     "git.autofetch": true,
     "ruby.format": "rubocop",
@@ -16,7 +23,6 @@
     "window.newWindowDimensions": "inherit",
     "workbench.colorTheme": "Dracula",
     "workbench.iconTheme": "material-icon-theme",
-    "editor.acceptSuggestionOnCommitCharacter": false,
     "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
     "editor.fontLigatures": true,
     "window.zoomLevel": 1,

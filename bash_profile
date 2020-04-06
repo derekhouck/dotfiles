@@ -5,7 +5,6 @@ export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 alias ls='ls -GFh'
 alias trash="rmtrash"
-export PATH="/usr/local/bin:$PATH"
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
 alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 
@@ -16,11 +15,16 @@ alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall F
 eval "$(rbenv init -)"
 
 # Make Terminal Better
-
 cd() { builtin cd "$@"; ls; }   # Always list directory contents upon 'cd'
+
+# Add directories to PATH
+export PATH="/usr/local/bin:$PATH"
+export PATH="$HOME/.rbenv/bin:~/.rbenv/shims:$PATH"
 
 # Set environment variable for PGDATA (Postgres)
 export PGDATA=/usr/local/var/postgres
-export PATH="$HOME/.rbenv/bin:~/.rbenv/shims:$PATH"
 
 export ro_linode_key=cd7833c64e355d1c239aef464d912fa6354dab2097a902fa7efba35b2fe1f8b0
+
+# Link Rubies to Homebrew's OpenSSL
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
