@@ -28,4 +28,4 @@ export PGDATA=/usr/local/var/postgres
 export ro_linode_key=cd7833c64e355d1c239aef464d912fa6354dab2097a902fa7efba35b2fe1f8b0
 
 # Link Rubies to Homebrew's OpenSSL
-export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"export PATH="/usr/local/sbin:$PATH"
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
