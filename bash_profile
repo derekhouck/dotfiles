@@ -19,6 +19,7 @@ cd() { builtin cd "$@"; ls; }   # Always list directory contents upon 'cd'
 
 # Add directories to PATH
 export PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
 export PATH="$HOME/.rbenv/bin:~/.rbenv/shims:$PATH"
 
 # Set environment variable for PGDATA (Postgres)
@@ -27,4 +28,4 @@ export PGDATA=/usr/local/var/postgres
 export ro_linode_key=cd7833c64e355d1c239aef464d912fa6354dab2097a902fa7efba35b2fe1f8b0
 
 # Link Rubies to Homebrew's OpenSSL
-export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"export PATH="/usr/local/sbin:$PATH"
