@@ -11,4 +11,4 @@ HEROKU_AC_BASH_SETUP_PATH=/Users/derekhouck/Library/Caches/heroku/autocomplete/b
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 # Default editor
-export EDITOR='code'
+export EDITOR='code -w'
