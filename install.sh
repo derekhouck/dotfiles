@@ -57,6 +57,10 @@ if ( is_mac ); then
     echo "Installing MacVim"
     brew install macvim
 
+    # VSCode
+    echo "Installing Visual Studio Code"
+    brew install --cask visual-studio-code
+
     # rbenv
     echo "Installing rbenv"
     brew install rbenv
