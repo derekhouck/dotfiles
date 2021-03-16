@@ -26,8 +26,9 @@ git clone https://github.com/derekhouck/dotfiles.git && cd dotfiles && source in
 ## Change Terminal theme
 See [Dracula -- A dark theme for Terminal.app](https://draculatheme.com/terminal/) for full instructions
 
-1. Terminal > Settings Tab
-1. Click "Gear" icon
+1. Go to Terminal's Preferences
+1. Click Profiles
+1. Click the icon next to + and -
 1. Click Import...
 1. Select the Dracula.terminal file in the `terminal-app` folder.
 1. Click Default
