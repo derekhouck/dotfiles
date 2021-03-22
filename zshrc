@@ -13,6 +13,9 @@ alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall F
 # PATH updates
 export PATH=~/.npm-global/bin:$PATH
 
+# Make Terminal Better
+cd() { builtin cd "$@"; ls; }   # Always list directory contents upon 'cd'
+
 # Create alias for `fuck`
 eval $(thefuck --alias)
 
