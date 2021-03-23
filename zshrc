@@ -16,6 +16,12 @@ export PATH=~/.npm-global/bin:$PATH
 # Make Terminal Better
 cd() { builtin cd "$@"; ls; }   # Always list directory contents upon 'cd'
 
+# case insensitive path-completion
+zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*'
+
+# Initialize zsh completion system
+autoload -Uz compinit && compinit
+
 # Create alias for `fuck`
 eval $(thefuck --alias)
 
