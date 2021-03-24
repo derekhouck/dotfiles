@@ -22,6 +22,18 @@ zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}
 # Initialize zsh completion system
 autoload -Uz compinit && compinit
 
+# Prompt customization
+PROMPT='%(?.%F{green}√.%F{red}?%?)%f %B%2~%b %# '
+
+# Git info in right side prompt
+autoload -Uz vcs_info
+precmd_vcs_info() { vcs_info }
+precmd_functions+=( precmd_vcs_info )
+setopt prompt_subst
+RPROMPT=\$vcs_info_msg_0_
+zstyle ':vcs_info:git:*' formats '%F{yellow}%b%f'
+zstyle ':vcs_info:*' enable git
+
 # Create alias for `fuck`
 eval $(thefuck --alias)
 
@@ -32,3 +44,10 @@ export NVM_DIR="$HOME/.nvm"
 
 # rbenv
 eval "$(rbenv init -)"
+
+##############
+# Bendyworks #
+##############
+
+# Concierge Live
+alias cls='overmind s -p 3000 -f Procfile.dev'
