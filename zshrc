@@ -1,8 +1,9 @@
 # Set options
 setopt AUTO_CD
 setopt CORRECT
-setopt CORRECT_ALL
 setopt NO_CASE_GLOB
+unsetopt nomatch
+unsetopt correct_all
 
 # aliases
 alias ls='ls -GFh'
