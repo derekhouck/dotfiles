@@ -46,6 +46,9 @@ export NVM_DIR="$HOME/.nvm"
 # rbenv
 eval "$(rbenv init -)"
 
+# Enable vi mode
+bindkey -v
+
 ##############
 # Bendyworks #
 ##############
