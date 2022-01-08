@@ -2,7 +2,10 @@
 
 ## For Macs
 
-Before you can run the below code, you need to verify that _XCode_ is installed. Open `Terminal.app` and run `$ make`. If XCode is not installed, you'll be presented with a dialog asking whether you want to install it.
+Before you can run the below code, install _XCode_.
+```shell
+xcode-select --install
+```
 
 ## For Every Platform
 
