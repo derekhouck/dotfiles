@@ -33,17 +33,8 @@ source ./lib/utils
 if ( is_mac ); then
     echo "You're on a Mac"
 
-    echo "
-    ########################
-    ###     HOMEBREW     ###
-    ########################
-    "
-
-    if [ ! -f "$(which brew)" ]; then
-        /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-    else
-        echo -e "Homebrew already installed"
-    fi
+    # Install Homebrew
+    source $dotfiles/brew.sh
 
     brew doctor
     brew update
