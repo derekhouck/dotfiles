@@ -1,12 +1,11 @@
 {
-    "[ruby]": {
-        "editor.formatOnSave": true,
-    },
-    "editor.wordWrap": "on",
     "editor.acceptSuggestionOnCommitCharacter": false,
+    "editor.wordWrap": "on",
     "editor.fontSize": 13,
-    "editor.formatOnSaveTimeout": 1500,
     "editor.tabSize": 2,
+    "emmet.includeLanguages": {
+        "html-eex": "html"
+    },
     "eslint.workingDirectories": [
         {
             "directory": "./client",
@@ -17,9 +16,14 @@
     "git.autofetch": true,
     "ruby.format": "rubocop",
     "ruby.lint": {
-        "rubocop": true,
+        "rubocop": {
+            "useBundler": true,
+            "forceExclusion": true
+        }
     },
     "ruby.lintDebounceTime": 500,
+    "ruby.useLanguageServer": true,
+    "ruby.useBundler": true,
     "window.newWindowDimensions": "inherit",
     "workbench.colorTheme": "Dracula",
     "workbench.iconTheme": "material-icon-theme",
@@ -29,10 +33,11 @@
     "javascript.updateImportsOnFileMove.enabled": "always",
     "editor.formatOnSave": true,
     "editor.accessibilitySupport": "off",
-    "prettier.eslintIntegration": true,
-    "prettier.htmlWhitespaceSensitivity": "strict",
-    "sync.gist": "efd671ac413e6d8fb32b0a800d108856",
     "javascript.format.enable": false,
-    "ruby.useLanguageServer": true,
-    "ruby.useBundler": true
+    "emmet.excludeLanguages": [
+        "haml",
+        "markdown"
+    ],
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.bracketPairColorization.enabled": true,
 }

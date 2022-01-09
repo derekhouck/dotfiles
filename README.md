@@ -3,6 +3,7 @@
 ## For Macs
 
 Before you can run the below code, install _XCode_.
+
 ```shell
 xcode-select --install
 ```
@@ -27,6 +28,7 @@ git clone https://github.com/derekhouck/dotfiles.git && cd dotfiles && source in
 5. If Linux...
 
 ## Change Terminal theme
+
 See [Dracula -- A dark theme for Terminal.app](https://draculatheme.com/terminal/) for full instructions
 
 1. Go to Terminal's Preferences
@@ -38,11 +40,4 @@ See [Dracula -- A dark theme for Terminal.app](https://draculatheme.com/terminal
 
 ## Sync VSCode settings
 
-Follow the instructions for the [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) VSCode plugin.
-
-### Backup VSCode settings using symlinks
-
-```
-ln -s ~/dotfiles/VSCode/settings.json ~/Library/Application\ Support/Code/User/settings.json
-ln -s ~/dotfiles/VSCode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
-```
+Go to VSCode settings window and turn on Settings Sync. Plugin no longer needed.
