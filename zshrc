@@ -49,9 +49,10 @@ eval "$(rbenv init -)"
 # Enable vi mode
 bindkey -v
 
-##############
-# Bendyworks #
-##############
+##########
+# EVERFI #
+##########
 
-# Concierge Live
-alias cls='overmind s -p 3000 -f Procfile.dev'
+# Start and stop puma-dev easily
+alias stop-pd='launchctl unload ~/Library/LaunchAgents/io.puma.dev.plist'
+alias start-pd='launchctl load ~/Library/LaunchAgents/io.puma.dev.plist'
