@@ -44,7 +44,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # rbenv
-eval "$(rbenv init -)"
+eval "$(rbenv init - zsh)"
 
 # Enable vi mode
 bindkey -v
@@ -56,3 +56,7 @@ bindkey -v
 # Start and stop puma-dev easily
 alias stop-pd='launchctl unload ~/Library/LaunchAgents/io.puma.dev.plist'
 alias start-pd='launchctl load ~/Library/LaunchAgents/io.puma.dev.plist'
+
+# Docker
+alias dcb='docker-compose build'
+alias dcu='docker-compose up'
