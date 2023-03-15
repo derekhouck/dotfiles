@@ -14,7 +14,7 @@ xcode-select --install
 git clone https://github.com/derekhouck/dotfiles.git && cd dotfiles && source install.sh
 ```
 
-## What this does
+### What this does
 
 1. Pulls the latest dotfiles git repository.
 2. Creates symlinks.
@@ -26,6 +26,10 @@ git clone https://github.com/derekhouck/dotfiles.git && cd dotfiles && source in
    4. Installs rbenv
    5. Installs The Fuck
 5. If Linux...
+
+## Vim
+
+Go to the [dotvim][dotvim] repo.
 
 ## Change Terminal theme
 
@@ -41,3 +45,5 @@ See [Dracula -- A dark theme for Terminal.app](https://draculatheme.com/terminal
 ## Sync VSCode settings
 
 Go to VSCode settings window and turn on Settings Sync. Plugin no longer needed.
+
+[dotvim]: https://github.com/derekhouck/dotvim
