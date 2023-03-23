@@ -48,6 +48,10 @@ if ( is_mac ); then
     echo "Installing MacVim"
     brew install macvim
 
+	# fzf
+	echo "Installing fzf"
+	brew install fzf
+
     # VSCode
     echo "Installing Visual Studio Code"
     brew install --cask visual-studio-code
