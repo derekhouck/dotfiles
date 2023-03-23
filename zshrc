@@ -60,3 +60,4 @@ alias start-pd='launchctl load ~/Library/LaunchAgents/io.puma.dev.plist'
 # Docker
 alias dcb='docker-compose build'
 alias dcu='docker-compose up'
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
