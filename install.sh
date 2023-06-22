@@ -40,7 +40,12 @@ if ( is_mac ); then
     brew update
     brew upgrade
 
-    #Git
+    # Fonts
+    echo "Installing fonts"
+    brew tap homebrew/cask-fonts
+    brew install --cask font-fira-code
+
+    # Git
     echo "Installing Git"
     brew install git
 
