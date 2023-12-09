@@ -1,18 +1,22 @@
-# Set options
-setopt AUTO_CD
-setopt CORRECT
-setopt NO_CASE_GLOB
-unsetopt nomatch
-unsetopt correct_all
-
-# aliases
+# Aliases
 alias ls='ls -GFh'
 alias trash='rmtrash'
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
 alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 
+## Docker aliases
+alias dcb='docker-compose build'
+alias dcu='docker-compose up'
+
 # PATH updates
 export PATH=~/.npm-global/bin:$PATH
+
+# Set and unset options
+setopt AUTO_CD
+setopt CORRECT
+setopt NO_CASE_GLOB
+unsetopt nomatch
+unsetopt correct_all
 
 # Make Terminal Better
 cd() { builtin cd "$@"; ls; }   # Always list directory contents upon 'cd'
@@ -49,15 +53,5 @@ eval "$(rbenv init - zsh)"
 # Enable vi mode
 bindkey -v
 
-##########
-# EVERFI #
-##########
-
-# Start and stop puma-dev easily
-alias stop-pd='launchctl unload ~/Library/LaunchAgents/io.puma.dev.plist'
-alias start-pd='launchctl load ~/Library/LaunchAgents/io.puma.dev.plist'
-
-# Docker
-alias dcb='docker-compose build'
-alias dcu='docker-compose up'
+# Fuzzy Finder
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
