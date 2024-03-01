@@ -27,3 +27,4 @@ export PGDATA=/usr/local/var/postgres
 
 # Link Rubies to Homebrew's OpenSSL
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
+. "$HOME/.cargo/env"

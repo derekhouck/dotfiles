@@ -8,8 +8,25 @@ alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall F
 alias dcb='docker-compose build'
 alias dcu='docker-compose up'
 
+## Rust aliases
+alias cra='cargo run --target=x86_64-apple-darwin'
+
+# Key bindings
+## Enable vi mode
+bindkey -v
+
+## Binds up and down to a history search
+bindkey "^[[A" history-beginning-search-backward
+bindkey "^[[B" history-beginning-search-forward
+
+
 # PATH updates
 export PATH=~/.npm-global/bin:$PATH
+export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.2.2/bin:$PATH"
+export PATH=~/.cargo/bin:$PATH
+export PATH=~/.local/bin:$PATH
+export PATH=/opt/homebrew/opt/go@1.20/bin:$PATH
+export PATH=~/.n/bin:$PATH
 
 # Set and unset options
 setopt AUTO_CD
@@ -50,8 +67,8 @@ export NVM_DIR="$HOME/.nvm"
 # rbenv
 eval "$(rbenv init - zsh)"
 
-# Enable vi mode
-bindkey -v
-
 # Fuzzy Finder
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# n global env
+export N_PREFIX=~/.n
