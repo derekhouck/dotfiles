@@ -61,6 +61,7 @@ if ( is_mac ); then
     # VSCode
     echo "Installing Visual Studio Code"
     brew install --cask visual-studio-code
+    defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 
     # rbenv
     echo "Installing rbenv"
