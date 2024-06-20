@@ -43,7 +43,6 @@ if ( is_mac ); then
 
     # Fonts
     echo "Installing fonts"
-    brew tap homebrew/cask-fonts
     brew install --cask font-fira-code
 
     # Git
