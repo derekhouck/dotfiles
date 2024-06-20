@@ -18,6 +18,9 @@ install_homebrew() {
 
   if [ ! -f "$(which brew)" ]; then
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+    # Add Homebrew to PATH
+    eval "$(/opt/homebrew/bin/brew shellenv)"
   else
     echo -e "Homebrew already installed"
   fi
