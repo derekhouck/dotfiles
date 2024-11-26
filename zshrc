@@ -19,14 +19,18 @@ bindkey -v
 bindkey "^[[A" history-beginning-search-backward
 bindkey "^[[B" history-beginning-search-forward
 
+# Set pager
+## Use the `-S` option so it truncates long lines for scrolling instead of wrapping them
+export PAGER='less -S'
 
 # PATH updates
+export PATH=~/.cargo/bin:$PATH
 export PATH=~/.npm-global/bin:$PATH
 export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.2.2/bin:$PATH"
-export PATH=~/.cargo/bin:$PATH
 export PATH=~/.local/bin:$PATH
 export PATH=/opt/homebrew/opt/go@1.20/bin:$PATH
 export PATH=~/.n/bin:$PATH
+export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
 
 # Set and unset options
 setopt AUTO_CD
