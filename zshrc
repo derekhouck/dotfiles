@@ -31,6 +31,7 @@ export PATH=~/.local/bin:$PATH
 export PATH=/opt/homebrew/opt/go@1.20/bin:$PATH
 export PATH=~/.n/bin:$PATH
 export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
+export PATH="$PATH:/path/to/elixir/bin"
 
 # Set and unset options
 setopt AUTO_CD
